@@ -1,0 +1,756 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.5;
+}
+body{
+    background-color: #141212;
+    font-family: "Roboto", sans-serif;
+    color:#fdeeee;
+    overflow-x: hidden;
+}
+*::selection{
+    color: #cb888a;
+}
+.dogpool{
+    position: absolute;
+    bottom: 200px;
+    right: -200px;
+}
+/* header */
+
+header{
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:76vh;
+    width: 1200px;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+header h1{
+    display: none;
+}
+header p{
+    text-align: center;
+    background-color: rgba(122, 87, 122,0.3);
+    border-radius: 50%;
+    padding: 40px;
+    width: 400px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+header p::selection{
+    color: #a03e90;
+    text-decoration: underline;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    width:1200px;
+    background-color: transparent;
+    margin:10px 0px;
+    line-height: 130%;
+    font-size: 30px;
+}
+nav .alineacion{
+    margin-left: 200px;
+}
+nav ul{
+    background-color: transparent;
+    z-index: 99;
+}
+nav li{
+    margin: 50px 0;
+}
+nav li a{
+    font-size: 30px;
+    color: inherit;
+}
+nav a:hover{
+    color: rgba(252, 63, 63,0.8);
+    border-bottom: 1px solid #D93036;
+}
+nav a.active{
+    background-color: #ffffff91;
+    padding: 5px 3px;
+    border-radius: 20px;
+    color: #8A1314;
+    font-weight: 800;
+}
+/*  Fin header */
+/* Main index */
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    font-family: "Protest Strike", sans-serif;
+    letter-spacing: 5px;
+}
+h3{
+    padding: 10px;
+    font-family: "Protest Strike", sans-serif;
+    letter-spacing: 5px;
+}
+h4{
+    padding: 5px;
+    font-family: "Protest Strike", sans-serif;
+    letter-spacing: 3px;
+}
+main > .intro{
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    position: relative;
+}
+.intro > h2{
+    padding-bottom: 0;
+    font-size: 60px;
+    line-height: 0.7;
+    align-content: end;
+    position: absolute;
+    bottom: 40px;
+    left: 550px;
+}
+.intro > img{
+    width: 600px;
+    align-content: end;
+    display: block;
+}
+.intro_cont{
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(138, 19, 20);
+    letter-spacing: 1.5px;
+    line-height: 130%;
+    font-size: 20px;
+    border-radius: 5%;
+    opacity: 0.7;
+}
+.intro_cont p,span,strong,em,abbr{
+    background-color: transparent;
+}
+.intro_cont > p{
+    margin: 20px;
+}
+main iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 100px 0;
+}
+/* Fin Main index */
+/* Main Peliculas */
+.peliculas{
+    box-shadow: 0px 5px 0px 0px rgba(252, 235, 235, 0.31);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+}
+.peliculas h2{
+    position: absolute;
+    bottom: 100px;
+    left: -100px;
+}
+main > p{
+    width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+main .pelis{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.pelis > div{
+    width: 380px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(122, 87, 122,0.3);
+    border-radius: 40px 10px;
+}
+.pelis > div p.sinapsis{
+    text-align: center;
+    margin: 10px 0;
+}
+.pelis > div h3, h4, p, a{
+    background-color: transparent;
+}
+.pelis > div img{
+    width: 360px;
+    border-radius: 10px 50px;
+    background-color: transparent;
+}
+.pelis > div h3{
+    text-align: center;
+    text-shadow: 1px 2px rgba(227 98 101 / 80%);
+    letter-spacing: 2px;
+}
+.pelis > div h4{
+    margin-left: 50px;
+    text-decoration: underline;
+    text-shadow: 2px 1px rgb(143 98 99 / 80%);
+    letter-spacing: 2px;
+}
+.pelis > div .relative{
+    position: relative;
+}
+.pelis > div .relative h4{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+    letter-spacing: 2px;
+}
+.pelis > div p.texto_card{
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+/* Fin Main Peliculas */
+/* Main Personajes */
+h2.personaje{
+    bottom: -6px;
+    left: 430px;
+}
+main .johny{
+    aspect-ratio: 4/3;
+    width: 100%;
+}
+main > div h2{
+    align-content: end;
+    padding-bottom: 0;
+    font-size: 60px;
+    line-height: 1.3;
+}
+main > div img{
+    align-content: end;
+    width: 500px;
+    display: block;
+}
+.personajes h3{
+    text-align: center;
+    font-size: 30px;
+}
+.personajes h4{
+    text-align: center;
+}
+main > div ~ div.column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+main > div ~ div > .card_prin{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.card_prin > div img{
+    border-radius: 50%;
+    width: 200px;
+    margin: auto;
+}
+.card_prin > .card_info{
+    width: 600px;
+    text-align: center;
+    align-items: center;
+}
+.card_info h4{
+    font-size: 20px;
+    text-shadow: 1px 2px rgba(233, 133, 183, 0.8);
+}
+.card_info h4 span{
+    letter-spacing: 2px;
+    text-decoration:underline;
+}
+.card_info p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.card_info p strong{
+    color: rgba(255 179 181 / 80%);;
+}
+main .per_sec{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+main > div ~ div > .card_sec{
+    width: 220px;
+    margin: 0 10px ;
+    padding: 0 10px;
+}
+main > div ~ div > .card_sec img{
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(116, 66, 66,0.5);
+}
+
+/* Fin Main Personajes */
+/* Main Comics */
+
+iframe.comicIframe{
+    aspect-ratio: 2.65;
+}
+div.peliculas.arreglito{
+    box-shadow: none;
+}
+h2.comics{
+    bottom: -5px;
+    left: 180px;
+}
+main > div ~ div.comics_banner img{
+    width: 1200px;
+    margin-bottom: 20px;
+}
+main > div img{
+    width: 500px;
+    display: block;
+}
+main > div h2{
+    font-size: 60px;
+    align-content: end;
+    padding-bottom: 0;
+    line-height: 0.7;
+}
+main > div ~ div.comics_subtitulo{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.comics_subtitulo strong, .deadpool{
+    color: #ff818a;
+}
+.comics_subtitulo .italica{
+    text-decoration: underline dotted #ff818a;
+    font-style: oblique;
+}
+.contApariciones{
+    display: flex;
+}
+.comics h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.comics h4{
+    font-size: 20px;
+    text-shadow: 1px 2px rgba(233, 133, 183, 0.8);
+}
+.contApariciones .apariciones_texto{
+    align-content: center;
+    text-align: center;
+    width: 300px;
+}
+.contApariciones > div ~ div img{
+    width: 280px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.bottom{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+main > div.contSeries{
+    display: flex;
+}
+.contSeries > div > img{
+    border-radius: 50px;
+    margin: 10px;
+    width: 200px;
+}
+.contSeries > div.series_texto{
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.evolucion_del_personaje{
+    margin-left: 40px;
+    margin-bottom: 0;
+    margin-top:50px;
+    padding: 0;
+    line-height: 0.7;
+}
+.evolucion{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(122, 87, 122,0.3);
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+.evolucion p{
+    margin-bottom: 10px;
+}
+
+
+/* Fin Main Comics */
+/* Main Cultura Pop y merchandising */
+h2.cpym{
+    width: 1000px;
+    bottom: -5px;
+    left: -200px;
+}
+main > div h2{
+    font-size: 60px;
+    align-content: end;
+    padding-bottom: 0;
+    line-height: 1;
+    z-index: 99;
+}
+main > div.merchandising{
+    margin-bottom: 20px;
+}
+main > div.merchandising img{
+    width: 1200px;
+    border-radius: 30px;
+}
+main > h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.cultura_card{
+    display: flex;
+    margin-bottom: 30px;
+}
+.cultura_card img{
+    align-content: end;
+    width: 400px;
+    border-radius: 30px;
+}
+.cultura_card .videojuegos{
+    width: 200px;
+    border-radius: 30px;
+    margin-left: 100px;
+}
+.cultura_card .texto{
+    text-align: center;
+    font-size: 18px;
+    align-content: center;
+    margin: 20px;
+    padding: 0 20px;
+}
+.culturapop h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.cultura_card .texto h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-shadow: 1px 2px rgba(233, 133, 183, 0.8);
+}
+.Productos_card{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.Productos_card img{
+    width: 300px;
+    border-radius: 30px;
+}
+.Productos_card .texto{
+    align-content: center;
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.Productos_card .texto h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-shadow: 1px 2px rgba(233, 133, 183, 0.8);
+}
+.texto > p > a{
+    color: rgb(218, 45, 45);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+/* Fin Main Cultura Pop y Merchandising */
+/* Main Form */
+
+.iframeForm{
+    aspect-ratio: 2.48;
+}
+.form{
+    width: 1200px;
+    margin: 0 auto;
+    align-content: center;
+    padding: 40px 0;
+}
+.form img{
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+.form > div{
+    background-color:rgba(138, 19, 20,0.5);
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+}
+.form > div form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    align-items: center;
+}
+.form > div form > div{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: transparent;
+}
+.form > div form > div div{
+    width: 300px;
+    background-color: transparent;
+}
+.form > div form > div div > label[for="nombre"]{
+    display: none;
+}
+.form > div form > div div > label[for="apellido"]{
+    display: none;
+}
+.form > div form > div div > label[for="mail"]{
+    display: none;
+}
+.form > div form > div div > input{
+    padding: 5px;
+    text-align: center;
+    width: 280px;
+    font-size: 18px;
+    margin: 0 10px;
+    font-family: "Protest Strike", sans-serif;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 10px 30px;
+    background-color: #141212;
+
+}
+.form > div form > div div > input::placeholder{
+    color: #FFE4D6;
+}
+.form div form textarea{
+    height: 300px;
+    width: 880px;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 17px;
+    border-radius: 10px 30px;
+    padding: 20px;
+    resize: vertical;
+    background-color: #141212;
+    color: #FFE4D6;
+}
+.form > div form textarea::placeholder{
+    color: #FFE4D6;
+}
+.form div form label{
+    width: 876px;
+    background-color: transparent;
+    font-size: 18px;
+
+}
+.form div form label[for="eventos_exclusivos"]{
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: left;
+}
+.form div form .select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select label[for="fan_desde"]{
+    margin-bottom: 10px;
+    font-family: "Protest Strike", sans-serif;
+    letter-spacing:1.5px;
+    font-size: 25px;
+}
+.select select{
+    padding: 10px;
+    width: 600px;
+    font-size: 17px;
+    background-color: #141212;
+    color: #FFE4D6;
+}
+.form fieldset{
+    background-image: url(../img/fondoFieldset.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 30px;
+}
+.form fieldset > legend{
+    letter-spacing:1.5px;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+}
+.form fieldset label{
+    display: block;
+    margin:10px 0
+}
+.form fieldset label > input[type="checkbox"]{
+    margin-right: 5px;
+}
+.textoFinal{
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.textoFinal p{
+    background-color: transparent;
+}
+.textoFinal p > span{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(218, 45, 45);
+    background-color: transparent;
+    text-decoration: #ffffff underline dashed;
+}
+.form > div form input[type="submit"]{
+    background-color: #9d011645;
+    padding: 20px 15px;
+    width: 200px;
+    border-radius: 10px 30px;
+    box-shadow: 2px 2px rgba(240, 126, 173, 0.5);
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+    color: #FFE4D6;
+}
+
+/* Fin Main Form */
+
+/* Main marveVsCapcom3*/
+main.intro_cont.mvc3 > div:first-of-type{
+    position: relative;
+}
+main.intro_cont.mvc3 > div:first-of-type img{
+    width: 300px;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: 420px;
+}
+main.intro_cont.mvc3 > div:first-of-type h2{
+    z-index: 99;
+}
+main.intro_cont.mvc3 > div:first-of-type h2 span{
+    font-size: inherit;
+    opacity: 0.5;
+}
+main.intro_cont.mvc3 > div:first-of-type h2 span:nth-child(2n){
+    opacity: 1;
+}
+main.intro_cont.mvc3 .parrafos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 900px;
+    margin: auto;
+}
+.parrafos div{
+    position: relative;
+}
+.parrafos div p{
+    width: 700px;
+    text-align: left;
+    margin: auto;
+    background-color: rgba(103, 51, 151, 0.76);
+    padding: 40px;
+    border-radius: 40px;
+}
+.parrafos div p strong{
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+.parrafos div img{
+    position: absolute;
+    width: 100px;
+    top:0px;
+    right: 80px;
+    transform: rotate(-20deg);
+}
+.galeria{
+    text-align: center;
+    margin: 40px 0px;
+    padding-bottom: 20px;
+}
+.galeria h3{
+    margin-bottom: 30px;
+}
+.galeria div:first-of-type{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+/* Fin Main marveVsCapcom3*/
+
+/* Footer */
+
+footer{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    padding: 50px 0;
+}
+footer img{
+    width: 250px;
+    border-radius: 50%;
+    margin-right: 50px;
+    border: #8A1314 solid;
+    box-shadow: 3px 5px rgba(233, 133, 183, 0.3);
+}
+footer p{
+    margin-left: 50px;
+    align-content: center;
+    text-align: center;
+    color:#cb888a;
+    text-shadow: 1px 3px rgba(233, 133, 183, 0.3);
+}
+footer p span{
+    font-size: 25px;
+    color: rgb(247, 154, 154)
+}
+footer p span a{
+    color: inherit;
+    font-size: 25px;
+}
+
+/* Fin Footer */

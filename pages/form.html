@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool || Formulario</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>DEADPOOL</h1>
+        <nav>
+            <ul class="alineacion">
+                <li>
+                    <a href="../index.html">Introducción</a>
+                </li>
+                <li>
+                    <a href="peliculas.html">Peliculas</a>
+                </li>
+                <li>
+                    <a href="personajes.html">Personajes</a>
+                </li>
+            </ul>
+            <ul >
+                <li>
+                    <a href="comics.html">Cómics</a>
+                </li>
+                <li>
+                    <a href="merchandising.html">Cultura Pop y Merchandising</a>
+                </li>
+                <li>
+                    <a href="form.html#form" class="active">Form</a>
+                </li>
+            </ul>
+        </nav>
+        <p lang="en">I'm not a hero. I'm a bad guy who gets paid to fuck up worse guys.</p>
+    </header>
+    <main class="form">
+        <iframe class="iframeForm" src="https://www.youtube.com/embed/rugE6bQG9fo?si=Z9ZbFpro30Zkjdj8&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img id="form" src="../img/deadpoolForm.png" alt="deadpool form">
+        <div>
+            <form action="#" method="post">
+                <div>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Nombre</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+                    </div>
+                    <div>
+                        <label for="mail">mail</label>
+                        <input type="email" id="mail" name="mail" required placeholder="Mail">
+                    </div>
+                </div>
+                <textarea name="" id="" placeholder="¿Hay algo que quieras decir?" maxlength="300"></textarea>
+                <label for="eventos_exclusivos">
+                    <input type="checkbox" id="eventos_exclusivos" name="eventos_exclusivos">
+                    Sí, quiero recibir invitaciones para eventos exclusivos de Deadpool, como premieres, meet & greets y más.
+                </label>
+                <div class="select">
+                    <label for="fan_desde">¿Desde cuándo eres fan de Deadpool?</label>
+                    <select id="fan_desde" name="fan_desde" required>
+                        <option value="" selected disabled>Seleccionar algo o te golpearé!</option>
+                        <option value="menos_de_un_ano">Menos de un año</option>
+                        <option value="uno_tres">De 1 a 3 años</option>
+                        <option value="mas_de_tres">Más de 3 años</option>
+                        <option value="desde_siempre">¡Desde siempre!</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>¿Qué tipo de contenido exclusivo prefieres recibir?</legend>
+                    <label for="avance_trailer">
+                        <input type="checkbox" name="contenido_preferido[]" value="avance_trailer" id="avance_trailer">Avances y tráilers
+                    </label>
+                    <label for="detras_camaras">
+                        <input type="checkbox" name="contenido_preferido[]" value="detras_camaras" id="detras_camaras">Detrás de cámaras
+                    </label>
+                    <label for="ofertas_merch">
+                        <input type="checkbox" name="contenido_preferido[]" value="ofertas_merch" id="ofertas_merch">Ofertas en mercancía
+                    </label>
+                    <label for="arte_fan">
+                        <input type="checkbox" name="contenido_preferido[]" value="arte_fan" id="arte_fan">Arte de fans y cómics exclusivos
+                    </label>
+                </fieldset>
+                <div class="textoFinal">
+                    <p>¡Completa el formulario y recibe un fondo de pantalla<br>exclusivo de <span>Deadpool</span> gratis!</p>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="../img/img_footer.jpeg" alt="ALUMNO">
+        </div>
+        <p>Proyecto Maquetacion y Desarrollo Web 2024 Parcial 1<br>Nombre: <span>Claudio Castro</span><br>Edad: <span>37 años (1987)</span><br>Mail: <span>claudio.87_@hotmail.com</span><br>ig: <span>@naciensepptiembre</span><br>fuentes: <span>ChatGPT</span><br><span>Wikipedia (<a href="https://es.wikipedia.org/wiki/Deadpool" target="_blank" rel="noopener noreferrer">https://es.wikipedia.org/wiki/Deadpool</a>)</span><br><span>Freepik</span></p>
+    </footer>
+</body>
+</html>
